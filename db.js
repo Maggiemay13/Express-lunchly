@@ -2,12 +2,12 @@
 
 const pg = require("pg");
 
-const db = new pg.Client("postgresql:///lunchly");
+// const db = new pg.Client("postgresql:///lunchly");
 
-// let db = new Client({
-//     host: "/var/run/postgresql/",
-//     database: "biztime",
-//   });
+let db = new pg.Client({
+  host: "/var/run/postgresql/",
+  database: "lunchly",
+});
 
 db.connect();
 
